@@ -14,6 +14,6 @@ English Telegram bot for RGGU schedules, based on the public RGGU schedule API.
 
    `https://api.telegram.org/bot<BOT_TOKEN>/setWebhook?url=https://<your-project>.vercel.app/api/webhook`
 
-The webhook endpoint is `/api/webhook`; scheduled notifications run through `/api/cron`.
+The webhook endpoint is `/api/webhook`; scheduled notifications run through `/api/cron`. The repository uses a daily Vercel Hobby-compatible cron. Exact multiple daily notification times require Vercel Pro or an external cron service.
 
 Without KV variables, the bot falls back to in-memory storage for local testing. Production should always use KV because Vercel functions are stateless.
